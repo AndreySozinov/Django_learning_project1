@@ -1,0 +1,10 @@
+INFO 2023-07-27 16:24:13,926 autoreload 12192 12100 Watching for file changes with StatReloader
+INFO 2023-07-27 16:25:19,790 autoreload 12192 12100 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-07-27 16:25:20,712 autoreload 6332 13036 Watching for file changes with StatReloader
+INFO 2023-07-27 16:25:27,139 views 6332 14584 Index page accessed
+INFO 2023-07-27 16:25:27,140 basehttp 6332 14584 "GET / HTTP/1.1" 200 178
+WARNING 2023-07-27 16:25:28,051 log 6332 14584 Not Found: /favicon.ico
+WARNING 2023-07-27 16:25:28,054 basehttp 6332 14584 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2023-07-27 16:25:43,130 basehttp 6332 14584 "GET /about HTTP/1.1" 301 0
+INFO 2023-07-27 16:25:43,139 views 6332 12964 About page accessed
+INFO 2023-07-27 16:25:43,141 basehttp 6332 12964 "GET /about/ HTTP/1.1" 200 159
