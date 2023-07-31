@@ -8,3 +8,106 @@ WARNING 2023-07-27 16:25:28,054 basehttp 6332 14584 "GET /favicon.ico HTTP/1.1" 
 INFO 2023-07-27 16:25:43,130 basehttp 6332 14584 "GET /about HTTP/1.1" 301 0
 INFO 2023-07-27 16:25:43,139 views 6332 12964 About page accessed
 INFO 2023-07-27 16:25:43,141 basehttp 6332 12964 "GET /about/ HTTP/1.1" 200 159
+INFO 2023-07-29 11:05:07,420 autoreload 136 2412 Watching for file changes with StatReloader
+INFO 2023-07-29 11:05:55,619 autoreload 13008 13648 Watching for file changes with StatReloader
+INFO 2023-07-29 11:09:10,653 autoreload 13008 13648 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-07-29 11:09:19,707 autoreload 2296 904 Watching for file changes with StatReloader
+INFO 2023-07-29 11:10:20,229 autoreload 2296 904 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-07-29 11:10:21,523 autoreload 896 11288 Watching for file changes with StatReloader
+INFO 2023-07-29 11:10:37,675 views 896 12140 Index page accessed
+INFO 2023-07-29 11:10:37,700 basehttp 896 12140 "GET / HTTP/1.1" 200 178
+WARNING 2023-07-29 11:10:43,575 log 896 12140 Not Found: /favicon.ico
+WARNING 2023-07-29 11:10:43,575 basehttp 896 12140 "GET /favicon.ico HTTP/1.1" 404 2966
+ERROR 2023-07-29 11:10:55,649 log 896 9540 Internal Server Error: /headsortails/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 12, in headsortails
+    coin = choice['Орёл', 'Решка']
+           ~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not subscriptable
+ERROR 2023-07-29 11:10:55,653 basehttp 896 9540 "GET /headsortails/ HTTP/1.1" 500 66629
+INFO 2023-07-29 11:14:28,271 autoreload 896 11288 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-07-29 11:14:32,973 autoreload 9136 11824 Watching for file changes with StatReloader
+INFO 2023-07-29 11:14:39,323 views 9136 4724 getting Решка
+INFO 2023-07-29 11:14:39,324 views 9136 4724 В базу данных добавлена запись: Toss result: Решка, time: 11:14:38.948938
+INFO 2023-07-29 11:14:39,326 basehttp 9136 4724 "GET /headsortails/ HTTP/1.1" 200 95
+INFO 2023-07-29 11:15:11,382 views 9136 6308 getting Орёл
+INFO 2023-07-29 11:15:11,382 views 9136 6308 В базу данных добавлена запись: Toss result: Орёл, time: 11:15:11.270834
+INFO 2023-07-29 11:15:11,383 basehttp 9136 6308 "GET /headsortails/ HTTP/1.1" 200 95
+INFO 2023-07-29 11:15:15,272 views 9136 6308 getting Орёл
+INFO 2023-07-29 11:15:15,272 views 9136 6308 В базу данных добавлена запись: Toss result: Орёл, time: 11:15:15.189928
+INFO 2023-07-29 11:15:15,273 basehttp 9136 6308 "GET /headsortails/ HTTP/1.1" 200 95
+INFO 2023-07-29 11:15:16,656 views 9136 11220 getting Решка
+INFO 2023-07-29 11:15:16,656 views 9136 11220 В базу данных добавлена запись: Toss result: Решка, time: 11:15:16.569988
+INFO 2023-07-29 11:15:16,657 basehttp 9136 11220 "GET /headsortails/ HTTP/1.1" 200 95
+INFO 2023-07-29 11:15:53,291 autoreload 9136 11824 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-07-29 11:15:54,224 autoreload 7864 11204 Watching for file changes with StatReloader
+INFO 2023-07-29 11:15:57,309 views 7864 2412 getting Орёл
+INFO 2023-07-29 11:15:57,309 views 7864 2412 В базу данных добавлена запись: Toss result: Орёл, time: 11:15:57.221534
+INFO 2023-07-29 11:15:57,311 basehttp 7864 2412 "GET /headsortails/ HTTP/1.1" 200 27
+INFO 2023-07-29 11:19:55,254 autoreload 10396 10644 Watching for file changes with StatReloader
+INFO 2023-07-29 11:19:59,442 views 10396 12884 Index page accessed
+INFO 2023-07-29 11:19:59,443 basehttp 10396 12884 "GET / HTTP/1.1" 200 178
+INFO 2023-07-29 11:20:09,069 views 10396 7900 getting Орёл
+INFO 2023-07-29 11:20:09,069 views 10396 7900 В базу данных добавлена запись: Toss result: Орёл, time: 11:20:08.941801
+INFO 2023-07-29 11:20:09,070 basehttp 10396 7900 "GET /headsortails/ HTTP/1.1" 200 27
+INFO 2023-07-29 13:30:50,695 autoreload 14648 15648 Watching for file changes with StatReloader
+INFO 2023-07-29 13:30:59,838 views 14648 9620 Index page accessed
+INFO 2023-07-29 13:30:59,840 basehttp 14648 9620 "GET / HTTP/1.1" 200 178
+INFO 2023-07-29 13:31:08,197 views 14648 9620 getting Орёл
+INFO 2023-07-29 13:31:08,197 views 14648 9620 В базу данных добавлена запись: Toss result: Орёл, time: 13:31:07.944387
+ERROR 2023-07-29 13:31:08,854 log 14648 9620 Internal Server Error: /headsortails/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 17, in headsortails
+    return HttpResponse(f'На монете: {coin}\n\n{coin_toss.statistics(5)}')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\models.py", line 17, in statistics
+    if all_tosses[i].toss == 'Орёл':
+       ~~~~~~~~~~^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\db\models\query.py", line 432, in __getitem__
+    return self._result_cache[k]
+           ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ERROR 2023-07-29 13:31:08,859 basehttp 14648 9620 "GET /headsortails/ HTTP/1.1" 500 75751
+INFO 2023-07-29 13:32:00,255 autoreload 14648 15648 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\models.py changed, reloading.
+INFO 2023-07-29 13:32:01,402 autoreload 13332 13152 Watching for file changes with StatReloader
+INFO 2023-07-29 13:32:04,648 views 13332 9184 getting Орёл
+INFO 2023-07-29 13:32:04,650 views 13332 9184 В базу данных добавлена запись: Toss result: Орёл, time: 13:32:04.550015
+INFO 2023-07-29 13:32:04,652 basehttp 13332 9184 "GET /headsortails/ HTTP/1.1" 200 54
+INFO 2023-07-29 13:32:16,486 views 13332 8216 getting Решка
+INFO 2023-07-29 13:32:16,488 views 13332 8216 В базу данных добавлена запись: Toss result: Решка, time: 13:32:16.371297
+INFO 2023-07-29 13:32:16,490 basehttp 13332 8216 "GET /headsortails/ HTTP/1.1" 200 56
+INFO 2023-07-29 13:32:25,396 views 13332 14308 getting Орёл
+INFO 2023-07-29 13:32:25,397 views 13332 14308 В базу данных добавлена запись: Toss result: Орёл, time: 13:32:25.295202
+INFO 2023-07-29 13:32:25,400 basehttp 13332 14308 "GET /headsortails/ HTTP/1.1" 200 54
+INFO 2023-07-29 13:32:34,615 views 13332 13600 getting Орёл
+INFO 2023-07-29 13:32:34,616 views 13332 13600 В базу данных добавлена запись: Toss result: Орёл, time: 13:32:34.527088
+INFO 2023-07-29 13:32:34,618 basehttp 13332 13600 "GET /headsortails/ HTTP/1.1" 200 54
+INFO 2023-07-29 13:32:38,025 views 13332 13600 getting Орёл
+INFO 2023-07-29 13:32:38,025 views 13332 13600 В базу данных добавлена запись: Toss result: Орёл, time: 13:32:37.937604
+INFO 2023-07-29 13:32:38,028 basehttp 13332 13600 "GET /headsortails/ HTTP/1.1" 200 54
+INFO 2023-07-29 13:33:30,777 autoreload 13332 13152 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-07-29 13:33:31,774 autoreload 5944 13212 Watching for file changes with StatReloader
+INFO 2023-07-29 13:33:34,283 views 5944 2876 getting Орёл
+INFO 2023-07-29 13:33:34,284 views 5944 2876 В базу данных добавлена запись: Toss result: Орёл, time: 13:33:34.202465
+INFO 2023-07-29 13:33:34,286 basehttp 5944 2876 "GET /headsortails/ HTTP/1.1" 200 54
+INFO 2023-07-29 13:33:37,226 views 5944 2876 getting Орёл
+INFO 2023-07-29 13:33:37,226 views 5944 2876 В базу данных добавлена запись: Toss result: Орёл, time: 13:33:37.142363
+INFO 2023-07-29 13:33:37,229 basehttp 5944 2876 "GET /headsortails/ HTTP/1.1" 200 54
+INFO 2023-07-29 13:33:43,185 views 5944 9620 getting Решка
+INFO 2023-07-29 13:33:43,186 views 5944 9620 В базу данных добавлена запись: Toss result: Решка, time: 13:33:43.081856
+INFO 2023-07-29 13:33:43,188 basehttp 5944 9620 "GET /headsortails/ HTTP/1.1" 200 56
+INFO 2023-07-29 13:33:46,778 views 5944 9620 getting Решка
+INFO 2023-07-29 13:33:46,779 views 5944 9620 В базу данных добавлена запись: Toss result: Решка, time: 13:33:46.696798
+INFO 2023-07-29 13:33:46,781 basehttp 5944 9620 "GET /headsortails/ HTTP/1.1" 200 56

@@ -3,13 +3,18 @@ from random import randint, choice
 from django.http import HttpResponse
 import logging
 
+from .models import CoinToss
+
 logger = logging.getLogger(__name__)
 
 
 def headsortails(request):
-    coin = choice['Орёл', 'Решка']
+    coin = choice(['Орёл', 'Решка'])
+    coin_toss = CoinToss(toss=coin)
+    coin_toss.save()
     logger.info(f'getting {coin}')
-    return HttpResponse(f'На монете: {choice}')
+    logger.info(f'В базу данных добавлена запись: {coin_toss}')
+    return HttpResponse(f'На монете: {coin}\n\n{coin_toss.statistics(10)}')
 
 
 def dice(request):

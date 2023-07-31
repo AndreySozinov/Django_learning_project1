@@ -65,6 +65,16 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'thirdapp': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'fourthapp': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
     },
 }
 
@@ -80,6 +90,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'firstapp',
     'secondapp',
+    'thirdapp',
+    'fourthapp',
 ]
 
 MIDDLEWARE = [
