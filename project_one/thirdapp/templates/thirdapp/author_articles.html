@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body>
+    <h1> Статьи автора {{ author.firstname }} {{ author.lastname }}</h1>
+    <ul>
+        {% for article in articles %}
+            {% if article.released is True %}
+                <li><a href="{% url 'article_full' article.id %}">{{ article.title }}</a></li>
+            {% else %}
+                <li>{{ article.title }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

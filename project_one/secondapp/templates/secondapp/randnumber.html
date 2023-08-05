@@ -1,0 +1,13 @@
+{% extends 'secondapp/base.html' %}
+
+{% block title %}Рандомайзер{% endblock %}
+
+{% block content %}
+    <h1>Результаты работы рандомайзера</h1>
+    <h2>Количество результатов: {{ number }}</h2>
+    <ol>
+        {% for item in result_list %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

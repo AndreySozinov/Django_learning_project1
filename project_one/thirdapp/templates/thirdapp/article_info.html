@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Article info</title>
+</head>
+<body>
+  <h1>Название: {{ article.title}}</h1>
+  <h2>Автор: {{ author.full_name }}</h2>
+  <h3>Дата публикации: {{ article.pub_date }}</h3>
+  <h4>Категория: {{ article.category }}</h4>
+  <p>Количество просмотров: {{ article.views_number }}</p>
+  <p>Опубликована: {{ article.released }}</p>
+  <br>
+    <p>{{ article.content }}</p>
+  <ul>
+      {% for comment in comments %}
+      <li>
+          {{ comment.comment }}
+          <b>{{ comment.author.fill_name }}</b>
+          {{ comment.updated_at }}
+          {% if comment.created_at != comment.updated_at %}
+            <p> изменено</p>
+          {% endif %}
+      </li>
+      {% endfor %}
+  </ul>
+</body>
+</html>

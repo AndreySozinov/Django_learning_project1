@@ -1,0 +1,13 @@
+{% extends 'secondapp/base.html' %}
+
+{% block title %}Орлянка{% endblock %}
+
+{% block content %}
+    <h1>Результаты игры в Орлянку</h1>
+    <h2>Количество бросков: {{ number }}</h2>
+    <ol>
+        {% for item in result_list %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}
