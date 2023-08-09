@@ -290,3 +290,439 @@ ERROR 2023-08-01 23:00:05,181 basehttp 15944 15620 "GET /randnumber/30/ HTTP/1.1
 INFO 2023-08-01 23:01:03,127 autoreload 15944 4728 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
 INFO 2023-08-01 23:01:04,072 autoreload 15272 3408 Watching for file changes with StatReloader
 INFO 2023-08-01 23:01:06,612 basehttp 15272 4144 "GET /randnumber/30/ HTTP/1.1" 200 1293
+INFO 2023-08-06 19:10:42,879 autoreload 1896 1164 Watching for file changes with StatReloader
+INFO 2023-08-06 19:11:07,323 autoreload 1896 1164 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\urls.py changed, reloading.
+INFO 2023-08-06 19:11:08,226 autoreload 2500 8928 Watching for file changes with StatReloader
+INFO 2023-08-06 19:11:58,615 autoreload 2500 8928 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\views.py changed, reloading.
+INFO 2023-08-06 19:11:59,498 autoreload 10280 8868 Watching for file changes with StatReloader
+INFO 2023-08-06 19:12:10,719 views 10280 11912 Index page accessed
+INFO 2023-08-06 19:12:10,833 basehttp 10280 11912 "GET / HTTP/1.1" 200 367
+WARNING 2023-08-06 19:12:11,908 log 10280 11912 Not Found: /favicon.ico
+WARNING 2023-08-06 19:12:11,908 basehttp 10280 11912 "GET /favicon.ico HTTP/1.1" 404 3806
+INFO 2023-08-06 19:12:25,429 basehttp 10280 14192 "GET /game_form HTTP/1.1" 301 0
+ERROR 2023-08-06 19:12:26,045 log 10280 10188 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view secondapp.views.game_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-08-06 19:12:26,047 basehttp 10280 10188 "GET /game_form/ HTTP/1.1" 500 68050
+INFO 2023-08-06 19:14:07,483 autoreload 10280 8868 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:14:08,450 autoreload 11556 6880 Watching for file changes with StatReloader
+ERROR 2023-08-06 19:14:12,739 log 11556 11268 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view secondapp.views.game_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-08-06 19:14:12,743 basehttp 11556 11268 "GET /game_form/ HTTP/1.1" 500 68187
+INFO 2023-08-06 19:16:08,267 autoreload 11556 6880 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:16:09,200 autoreload 2524 15448 Watching for file changes with StatReloader
+INFO 2023-08-06 19:16:12,088 basehttp 2524 13788 "GET /game_form/ HTTP/1.1" 200 801
+INFO 2023-08-06 19:16:27,387 views 2524 14192 Get game_type='dice', attempt_amount=20.
+ERROR 2023-08-06 19:16:27,719 log 2524 14192 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 24, in game_form
+    dice(request='POST', number=attempt_amount)
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 50, in dice
+    return render(request, 'secondapp/dice.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context.py", line 254, in bind_template
+    updates.update(processor(self.request))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context_processors.py", line 41, in debug
+    if settings.DEBUG and request.META.get("REMOTE_ADDR") in settings.INTERNAL_IPS:
+                          ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'META'
+ERROR 2023-08-06 19:16:27,729 basehttp 2524 14192 "POST /game_form/ HTTP/1.1" 500 103884
+INFO 2023-08-06 19:17:11,671 autoreload 2524 15448 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:17:12,542 autoreload 10740 8456 Watching for file changes with StatReloader
+INFO 2023-08-06 19:17:18,110 views 10740 12156 Get game_type='dice', attempt_amount=20.
+ERROR 2023-08-06 19:17:18,179 log 10740 12156 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 24, in game_form
+    dice(number=attempt_amount)
+TypeError: dice() missing 1 required positional argument: 'request'
+ERROR 2023-08-06 19:17:18,183 basehttp 10740 12156 "POST /game_form/ HTTP/1.1" 500 69561
+INFO 2023-08-06 19:17:33,280 basehttp 10740 8164 "GET /game_form/ HTTP/1.1" 200 801
+INFO 2023-08-06 19:17:38,138 views 10740 12008 Get game_type='coin', attempt_amount=20.
+ERROR 2023-08-06 19:17:38,175 log 10740 12008 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 22, in game_form
+    headsortails(number=attempt_amount)
+TypeError: headsortails() missing 1 required positional argument: 'request'
+ERROR 2023-08-06 19:17:38,178 basehttp 10740 12008 "POST /game_form/ HTTP/1.1" 500 69587
+INFO 2023-08-06 19:18:56,454 autoreload 10740 8456 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:18:57,395 autoreload 6956 9236 Watching for file changes with StatReloader
+INFO 2023-08-06 19:19:02,501 views 6956 15940 Get game_type='coin', attempt_amount=20.
+ERROR 2023-08-06 19:19:02,643 log 6956 15940 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 22, in game_form
+    headsortails(request='GET', number=attempt_amount)
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 41, in headsortails
+    return render(request, 'secondapp/headsortails.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context.py", line 254, in bind_template
+    updates.update(processor(self.request))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context_processors.py", line 41, in debug
+    if settings.DEBUG and request.META.get("REMOTE_ADDR") in settings.INTERNAL_IPS:
+                          ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'META'
+ERROR 2023-08-06 19:19:02,652 basehttp 6956 15940 "POST /game_form/ HTTP/1.1" 500 107740
+INFO 2023-08-06 19:19:41,916 autoreload 6956 9236 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:19:45,041 autoreload 12928 7160 Watching for file changes with StatReloader
+INFO 2023-08-06 19:22:00,309 autoreload 12928 7160 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:22:01,487 autoreload 724 13348 Watching for file changes with StatReloader
+INFO 2023-08-06 19:23:04,910 autoreload 724 13348 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:23:05,808 autoreload 11940 10576 Watching for file changes with StatReloader
+INFO 2023-08-06 19:23:12,803 views 11940 3388 Get game_type='coin', attempt_amount=20.
+ERROR 2023-08-06 19:23:13,064 log 11940 3388 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 22, in game_form
+    headsortails(request.method, number=attempt_amount)
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 41, in headsortails
+    return render(request, 'secondapp/headsortails.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context.py", line 254, in bind_template
+    updates.update(processor(self.request))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context_processors.py", line 41, in debug
+    if settings.DEBUG and request.META.get("REMOTE_ADDR") in settings.INTERNAL_IPS:
+                          ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'META'
+ERROR 2023-08-06 19:23:13,073 basehttp 11940 3388 "POST /game_form/ HTTP/1.1" 500 107725
+INFO 2023-08-06 19:24:22,445 autoreload 11940 10576 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:24:23,367 autoreload 13788 14072 Watching for file changes with StatReloader
+INFO 2023-08-06 19:24:28,797 views 13788 5592 Get game_type='coin', attempt_amount=20.
+ERROR 2023-08-06 19:24:28,878 log 13788 5592 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view secondapp.views.game_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-08-06 19:24:28,881 basehttp 13788 5592 "POST /game_form/ HTTP/1.1" 500 69754
+INFO 2023-08-06 19:25:09,819 autoreload 13788 14072 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:25:10,873 autoreload 8008 8556 Watching for file changes with StatReloader
+INFO 2023-08-06 19:25:14,404 basehttp 8008 1952 "GET /game_form/ HTTP/1.1" 200 801
+INFO 2023-08-06 19:25:20,407 views 8008 14220 Get game_type='coin', attempt_amount=5.
+INFO 2023-08-06 19:25:20,418 basehttp 8008 14220 "POST /game_form/ HTTP/1.1" 200 820
+INFO 2023-08-06 19:25:44,879 views 8008 12860 Get game_type='dice', attempt_amount=5.
+INFO 2023-08-06 19:25:44,884 basehttp 8008 12860 "POST /game_form/ HTTP/1.1" 200 820
+INFO 2023-08-06 19:27:21,182 autoreload 8008 8556 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:27:22,101 autoreload 8348 8820 Watching for file changes with StatReloader
+INFO 2023-08-06 19:27:24,532 views 8348 9260 Get game_type='dice', attempt_amount=5.
+ERROR 2023-08-06 19:27:24,606 log 8348 9260 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view secondapp.views.game_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-08-06 19:27:24,609 basehttp 8348 9260 "POST /game_form/ HTTP/1.1" 500 69753
+INFO 2023-08-06 19:34:25,081 autoreload 8348 8820 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:34:26,067 autoreload 15024 7536 Watching for file changes with StatReloader
+INFO 2023-08-06 19:34:31,516 views 15024 824 Get game_type='dice', attempt_amount=5.
+ERROR 2023-08-06 19:34:31,653 log 15024 824 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 24, in game_form
+    dice(HttpRequest, number=attempt_amount)
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 50, in dice
+    return render(request, 'secondapp/dice.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context.py", line 254, in bind_template
+    updates.update(processor(self.request))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context_processors.py", line 41, in debug
+    if settings.DEBUG and request.META.get("REMOTE_ADDR") in settings.INTERNAL_IPS:
+                          ^^^^^^^^^^^^
+AttributeError: type object 'HttpRequest' has no attribute 'META'
+ERROR 2023-08-06 19:34:31,662 basehttp 15024 824 "POST /game_form/ HTTP/1.1" 500 103756
+INFO 2023-08-06 19:36:16,817 autoreload 15024 7536 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:36:17,754 autoreload 5976 4872 Watching for file changes with StatReloader
+INFO 2023-08-06 19:36:23,030 views 5976 8568 Index page accessed
+INFO 2023-08-06 19:36:23,043 basehttp 5976 8568 "GET / HTTP/1.1" 200 367
+INFO 2023-08-06 19:36:40,522 basehttp 5976 13144 "GET /game_form/ HTTP/1.1" 200 801
+INFO 2023-08-06 19:36:44,563 views 5976 13144 Get game_type='coin', attempt_amount=5.
+ERROR 2023-08-06 19:36:44,659 log 5976 13144 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 22, in game_form
+    headsortails(HttpResponse, number=attempt_amount)
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py", line 41, in headsortails
+    return render(request, 'secondapp/headsortails.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context.py", line 254, in bind_template
+    updates.update(processor(self.request))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\context_processors.py", line 41, in debug
+    if settings.DEBUG and request.META.get("REMOTE_ADDR") in settings.INTERNAL_IPS:
+                          ^^^^^^^^^^^^
+AttributeError: type object 'HttpResponse' has no attribute 'META'
+ERROR 2023-08-06 19:36:44,667 basehttp 5976 13144 "POST /game_form/ HTTP/1.1" 500 104590
+INFO 2023-08-06 19:38:06,850 autoreload 5976 4872 K:\YandexDisk\razrab\Django\seminars\project_one\secondapp\views.py changed, reloading.
+INFO 2023-08-06 19:38:08,026 autoreload 12416 14836 Watching for file changes with StatReloader
+INFO 2023-08-06 19:38:13,728 views 12416 14592 Get game_type='coin', attempt_amount=5.
+ERROR 2023-08-06 19:38:13,804 log 12416 14592 Internal Server Error: /game_form/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view secondapp.views.game_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-08-06 19:38:13,807 basehttp 12416 14592 "POST /game_form/ HTTP/1.1" 500 69753
+INFO 2023-08-06 20:31:06,167 autoreload 11164 9732 Watching for file changes with StatReloader
+INFO 2023-08-06 20:31:08,767 views 11164 11516 Index page accessed
+INFO 2023-08-06 20:31:08,775 basehttp 11164 11516 "GET / HTTP/1.1" 200 367
+INFO 2023-08-06 20:31:21,141 basehttp 11164 6276 "GET /game_form/ HTTP/1.1" 200 801
+INFO 2023-08-06 20:31:28,050 views 11164 6252 Get game_type='coin', attempt_amount=5.
+INFO 2023-08-06 20:31:28,070 basehttp 11164 6252 "POST /game_form/ HTTP/1.1" 200 477
+INFO 2023-08-07 18:27:11,107 autoreload 1664 14660 Watching for file changes with StatReloader
+INFO 2023-08-07 18:27:33,969 autoreload 1664 14660 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\urls.py changed, reloading.
+INFO 2023-08-07 18:27:34,974 autoreload 7256 14104 Watching for file changes with StatReloader
+INFO 2023-08-07 18:27:54,635 autoreload 7256 14104 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\urls.py changed, reloading.
+INFO 2023-08-07 18:27:55,543 autoreload 16372 4656 Watching for file changes with StatReloader
+INFO 2023-08-07 18:28:00,966 views 16372 14816 Index page accessed
+INFO 2023-08-07 18:28:03,187 basehttp 16372 14816 "GET / HTTP/1.1" 200 367
+WARNING 2023-08-07 18:28:04,530 log 16372 14816 Not Found: /favicon.ico
+WARNING 2023-08-07 18:28:04,530 basehttp 16372 14816 "GET /favicon.ico HTTP/1.1" 404 4162
+INFO 2023-08-07 18:28:17,048 basehttp 16372 1380 "GET /author_add HTTP/1.1" 301 0
+ERROR 2023-08-07 18:28:18,195 log 16372 1348 Internal Server Error: /author_add/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'csrf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\views.py", line 19, in author_add
+    return render(request, 'thirdapp/author_add.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'csrf'. Did you forget to register or load this tag?
+ERROR 2023-08-07 18:28:18,217 basehttp 16372 1348 "GET /author_add/ HTTP/1.1" 500 135916
+INFO 2023-08-07 18:34:02,118 autoreload 9616 11864 Watching for file changes with StatReloader
+INFO 2023-08-07 18:34:23,126 basehttp 9616 12536 "GET /author_add/ HTTP/1.1" 200 1100
+ERROR 2023-08-07 18:35:15,489 log 9616 2628 Internal Server Error: /author_add/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\views.py", line 14, in author_add
+    biography=form.cleaned_data['biography'],
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'biography'
+ERROR 2023-08-07 18:35:15,492 basehttp 9616 2628 "POST /author_add/ HTTP/1.1" 500 69425
+INFO 2023-08-07 18:42:44,485 autoreload 9616 11864 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\forms.py changed, reloading.
+INFO 2023-08-07 18:42:45,683 autoreload 8300 13976 Watching for file changes with StatReloader
+INFO 2023-08-07 18:47:40,172 autoreload 8300 13976 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\forms.py changed, reloading.
+INFO 2023-08-07 18:47:41,363 autoreload 8972 1620 Watching for file changes with StatReloader
+INFO 2023-08-07 18:47:53,117 basehttp 8972 5628 "GET /author_add/ HTTP/1.1" 200 1267
+ERROR 2023-08-07 18:48:46,640 log 8972 8256 Internal Server Error: /author_add/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view thirdapp.views.author_add didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-08-07 18:48:46,643 basehttp 8972 8256 "POST /author_add/ HTTP/1.1" 500 70208
+INFO 2023-08-07 18:53:51,730 autoreload 8972 1620 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\views.py changed, reloading.
+INFO 2023-08-07 18:53:53,101 autoreload 7424 828 Watching for file changes with StatReloader
+INFO 2023-08-07 18:58:53,860 autoreload 7424 828 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\views.py changed, reloading.
+INFO 2023-08-07 18:58:55,177 autoreload 6392 2756 Watching for file changes with StatReloader
+INFO 2023-08-07 18:59:14,263 basehttp 6392 7312 "POST /author_add/ HTTP/1.1" 200 69
+INFO 2023-08-07 18:59:27,279 basehttp 6392 6604 "GET /author_add/ HTTP/1.1" 200 1267
+INFO 2023-08-07 19:00:27,415 basehttp 6392 15468 "POST /author_add/ HTTP/1.1" 200 67
+INFO 2023-08-07 19:00:42,995 basehttp 6392 5052 "POST /author_add/ HTTP/1.1" 200 67
+INFO 2023-08-07 19:00:49,667 basehttp 6392 14180 "GET /author_add/ HTTP/1.1" 200 1267
+INFO 2023-08-07 19:02:00,714 basehttp 6392 6556 "POST /author_add/ HTTP/1.1" 200 75
+INFO 2023-08-07 19:02:24,792 basehttp 6392 8520 "GET /article_add/ HTTP/1.1" 200 1082
+ERROR 2023-08-07 19:03:00,276 log 6392 7256 Internal Server Error: /article_add/
+Traceback (most recent call last):
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\views.py", line 29, in article_add
+    content=form.cleaned_data['content'],
+            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'content'
+ERROR 2023-08-07 19:03:00,281 basehttp 6392 7256 "POST /article_add/ HTTP/1.1" 500 69417

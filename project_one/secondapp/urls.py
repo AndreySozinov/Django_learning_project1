@@ -5,4 +5,5 @@ urlpatterns = [
     path('headsortails/<int:number>/', views.headsortails, name='headsortails'),
     path('dice/<int:number>/', views.dice, name='dice'),
     path('randnumber/<int:number>/', views.randnumber, name='randnumber'),
+    path('game_form/', views.game_form, name='game_form'),
 ]
