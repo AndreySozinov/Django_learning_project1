@@ -2,9 +2,41 @@ import datetime
 
 from django.http import HttpResponse
 
-from .forms import ProductAddForm
-from project_one.fourthapp.models import Client, Order, Product
+from .forms import ProductAddForm, ClientAddForm, ClientUpdateForm
+from .models import Client, Order, Product
 from django.shortcuts import render, get_object_or_404
+
+
+def client_add(request):
+    if request.method == 'POST':
+        form = ClientAddForm(request.POST)
+        if form.is_valid():
+            client = Client(name=form.cleaned_data['name'],
+                            email=form.cleaned_data['email'],
+                            phone_number=form.cleaned_data['phone_number'],
+                            address=form.cleaned_data['address'])
+            client.save()
+            return HttpResponse(f'Покупатель {client.name} добавлен успешно.')
+    else:
+        form = ClientAddForm
+        return render(request, 'fourthapp/client_add.html', {'form': form})
+
+
+def client_update(request):
+    if request.method == 'POST':
+        form = ClientUpdateForm(request.POST)
+        if form.is_valid():
+            client = get_object_or_404(Client, pk=form.cleaned_data['pk'])
+            if client is not None:
+                client.name = form.cleaned_data['name']
+                client.email = form.cleaned_data['email']
+                client.phone_number = form.cleaned_data['phone_number']
+                client.address = form.cleaned_data['address']
+                client.save()
+            return HttpResponse(f'Данные покупателя {client.name} успешно обновлены.')
+    else:
+        form = ClientUpdateForm
+        return render(request, 'fourthapp/client_update.html', {'form': form})
 
 
 def product_add(request):
@@ -20,7 +52,7 @@ def product_add(request):
             return HttpResponse(f'Продукт {product.title} добавлен успешно.')
     else:
         form = ProductAddForm()
-        return render(request, 'fourth/product_add.html', {'form': form})
+        return render(request, 'fourthapp/product_add.html', {'form': form})
 
 
 def product_update(request):
@@ -38,7 +70,7 @@ def product_update(request):
             return HttpResponse(f'Продукт {product.title} успешно обновлён.')
     else:
         form = ProductAddForm()
-        return render(request, 'fourth/product_update.html', {'form': form})
+        return render(request, 'fourthapp/product_update.html', {'form': form})
 
 
 def client_orders(request, client_id):

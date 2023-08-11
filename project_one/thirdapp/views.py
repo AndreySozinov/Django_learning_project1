@@ -57,9 +57,9 @@ def article_info(request, article_id):
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
-            comment = Comment(author=get_object_or_404(Author, pk=form.cleaned_data['author'],
+            comment = Comment(author=get_object_or_404(Author, pk=form.cleaned_data['author']),
                               article=get_object_or_404(Article, pk=article_id),
-                              comment=form.cleaned_data['comment']
+                              comment=form.cleaned_data['comment'])
             comment.save()
             return HttpResponse('Комментарий добавлен успешно.')
     else:
