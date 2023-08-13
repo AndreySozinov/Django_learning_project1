@@ -1011,3 +1011,60 @@ INFO 2023-08-10 20:22:17,369 autoreload 14912 13552 K:\YandexDisk\razrab\Django\
 INFO 2023-08-10 20:22:18,384 autoreload 17232 8288 Watching for file changes with StatReloader
 INFO 2023-08-10 20:30:14,978 autoreload 17232 8288 K:\YandexDisk\razrab\Django\seminars\project_one\thirdapp\admin.py changed, reloading.
 INFO 2023-08-10 20:30:16,058 autoreload 14192 992 Watching for file changes with StatReloader
+INFO 2023-08-13 12:55:48,877 autoreload 3128 11124 Watching for file changes with StatReloader
+INFO 2023-08-13 12:57:58,256 autoreload 3128 11124 K:\YandexDisk\razrab\Django\seminars\project_one\fourthapp\admin.py changed, reloading.
+INFO 2023-08-13 12:57:59,366 autoreload 10792 6232 Watching for file changes with StatReloader
+INFO 2023-08-13 12:58:08,524 views 10792 5340 Index page accessed
+INFO 2023-08-13 12:58:10,185 basehttp 10792 5340 "GET / HTTP/1.1" 200 10150
+INFO 2023-08-13 12:58:10,725 basehttp 10792 5340 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-08-13 12:58:10,942 basehttp 10792 11776 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-08-13 12:58:11,513 basehttp 10792 11776 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-08-13 12:58:11,652 basehttp 10792 5340 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-08-13 12:58:12,411 log 10792 5340 Not Found: /favicon.ico
+WARNING 2023-08-13 12:58:12,411 basehttp 10792 5340 "GET /favicon.ico HTTP/1.1" 404 14840
+INFO 2023-08-13 12:58:45,521 basehttp 10792 5340 "GET /game_form/ HTTP/1.1" 200 11031
+INFO 2023-08-13 12:59:28,174 views 10792 5340 Get game_type='number', attempt_amount=64.
+INFO 2023-08-13 12:59:28,284 basehttp 10792 5340 "POST /game_form/ HTTP/1.1" 200 12642
+INFO 2023-08-13 12:59:34,360 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=HistoryPanel HTTP/1.1" 200 7949
+INFO 2023-08-13 12:59:34,392 basehttp 10792 5340 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3330
+INFO 2023-08-13 13:00:01,308 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=VersionsPanel HTTP/1.1" 200 760
+INFO 2023-08-13 13:00:17,993 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=SettingsPanel HTTP/1.1" 200 27465
+INFO 2023-08-13 13:00:27,149 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=HeadersPanel HTTP/1.1" 200 5620
+INFO 2023-08-13 13:00:35,423 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=RequestPanel HTTP/1.1" 200 3196
+INFO 2023-08-13 13:00:47,551 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=SQLPanel HTTP/1.1" 200 30374
+INFO 2023-08-13 13:01:08,757 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=StaticFilesPanel HTTP/1.1" 200 33427
+INFO 2023-08-13 13:01:11,241 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=TemplatesPanel HTTP/1.1" 200 8750
+INFO 2023-08-13 13:01:58,729 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=80f50e20f2954b70b453516bf64e4634&panel_id=ProfilingPanel HTTP/1.1" 200 38115
+INFO 2023-08-13 13:04:04,158 basehttp 10792 5340 "GET /game_form/ HTTP/1.1" 200 11030
+INFO 2023-08-13 13:04:11,798 views 10792 5340 Get game_type='coin', attempt_amount=64.
+INFO 2023-08-13 13:04:11,883 basehttp 10792 5340 "POST /game_form/ HTTP/1.1" 200 13075
+INFO 2023-08-13 13:04:11,935 basehttp 10792 5340 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-08-13 13:04:11,938 basehttp 10792 13872 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-08-13 13:04:12,027 basehttp 10792 13872 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-08-13 13:04:12,243 basehttp 10792 13872 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-08-13 13:04:14,812 basehttp 10792 13872 "GET /__debug__/render_panel/?store_id=8895716d4d6e4f2087ca5e12e9fb2d2c&panel_id=ProfilingPanel HTTP/1.1" 200 43210
+INFO 2023-08-13 13:04:24,373 basehttp 10792 13872 "GET /game_form/ HTTP/1.1" 200 11030
+INFO 2023-08-13 13:04:28,520 views 10792 13872 Get game_type='dice', attempt_amount=64.
+INFO 2023-08-13 13:04:28,611 basehttp 10792 13872 "POST /game_form/ HTTP/1.1" 200 12565
+INFO 2023-08-13 13:05:43,920 basehttp 10792 13872 "GET /author_add HTTP/1.1" 301 0
+INFO 2023-08-13 13:05:44,314 basehttp 10792 5340 "GET /author_add/ HTTP/1.1" 200 11499
+INFO 2023-08-13 13:06:33,567 basehttp 10792 5340 "POST /author_add/ HTTP/1.1" 200 55
+INFO 2023-08-13 13:06:55,683 basehttp 10792 5340 "GET /author_add/ HTTP/1.1" 200 11498
+INFO 2023-08-13 13:06:58,347 basehttp 10792 5340 "GET /__debug__/render_panel/?store_id=2dcf922b22184904b6921128b757ca74&panel_id=ProfilingPanel HTTP/1.1" 200 36600
+WARNING 2023-08-13 13:08:25,424 log 10792 5340 Not Found: /client_add
+WARNING 2023-08-13 13:08:25,425 basehttp 10792 5340 "GET /client_add HTTP/1.1" 404 15262
+WARNING 2023-08-13 13:10:12,457 log 10792 5340 Not Found: /client_add
+WARNING 2023-08-13 13:10:12,460 basehttp 10792 5340 "GET /client_add HTTP/1.1" 404 15262
+INFO 2023-08-13 13:10:12,512 basehttp 10792 5340 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-08-13 13:10:12,513 basehttp 10792 11408 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-08-13 13:10:12,607 basehttp 10792 11408 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-08-13 13:10:12,668 basehttp 10792 11408 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-08-13 13:10:13,257 autoreload 10792 6232 K:\YandexDisk\razrab\Django\seminars\project_one\fourthapp\urls.py changed, reloading.
+INFO 2023-08-13 13:10:14,403 autoreload 6276 9124 Watching for file changes with StatReloader
+INFO 2023-08-13 13:10:16,721 basehttp 6276 10164 "GET /client_add HTTP/1.1" 301 0
+INFO 2023-08-13 13:10:17,346 basehttp 6276 7664 "GET /client_add/ HTTP/1.1" 200 11307
+INFO 2023-08-13 13:11:12,049 basehttp 6276 7664 "POST /client_add/ HTTP/1.1" 200 61
+INFO 2023-08-13 13:11:36,378 basehttp 6276 7664 "GET /article_add HTTP/1.1" 301 0
+INFO 2023-08-13 13:11:36,600 basehttp 6276 5872 "GET /article_add/ HTTP/1.1" 200 11744
+INFO 2023-08-13 13:12:14,213 basehttp 6276 5872 "POST /article_add/ HTTP/1.1" 200 47
+INFO 2023-08-13 13:12:18,262 basehttp 6276 5872 "GET /article_add/ HTTP/1.1" 200 11744

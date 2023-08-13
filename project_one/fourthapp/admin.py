@@ -35,7 +35,7 @@ class ClientAdmin(admin.ModelAdmin):
             'Дата регистрации',
             {
                 'description': 'Дата',
-                'fields': 'registered_at',
+                'fields': ['registered_at'],
             }
         ),
     ]
@@ -73,7 +73,7 @@ class ProductAdmin(admin.ModelAdmin):
             'Дата регистрации',
             {
                 'description': 'Дата внесения в базу данных',
-                'fields': 'added_at',
+                'fields': ['added_at'],
             }
         ),
     ]
